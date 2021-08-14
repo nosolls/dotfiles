@@ -3,7 +3,7 @@ set rnu
 
 " replace tabs with spaces
 set expandtab
-" 1 tab = 2 spaces
+" 1 tab = 4 spaces
 set tabstop=4 shiftwidth=4
 
 " when deleting whitespace at the beginning of a line, delete 
@@ -14,8 +14,8 @@ set smarttab
 set autoindent
 
 " Ignore case when searching
-"set ignorecase
-"set smartcase
+set ignorecase
+set smartcase
 
 " highlight search results (after pressing Enter)
 set hlsearch
