@@ -1,14 +1,39 @@
+# Disable autoconfig
 config.load_autoconfig(False)
 import os.path
 
+# Move some bindings around
 config.bind('d', 'scroll-page 0 0.5')
 config.bind('D', 'tab-close')
 config.bind('u', 'scroll-page 0 -0.5')
 config.bind('U', 'undo')
 
+# Remember last tabs
 c.auto_save.session = True
 
+# Dark mode for sites
+config.set("colors.webpage.darkmode.enabled", True)
 
+# Change homerow for Colemak Mod-DHm
+c.hints.chars = 'arstdhneio'
+
+# Set font
+c.fonts.web.family.fixed = 'Terminus'
+c.fonts.completion.category = '11pt bold Terminus'
+c.fonts.completion.entry = '11pt Terminus'
+c.fonts.tabs.selected = '11pt Terminus'
+c.fonts.tabs.unselected = '11pt Terminus'
+c.fonts.statusbar = '11pt Terminus'
+c.fonts.downloads = '11pt Terminus'
+c.fonts.hints = 'bold 10px Terminus'
+c.fonts.debug_console = '11pt Terminus'
+c.fonts.keyhint = '11pt Terminus'
+c.fonts.messages.error = '11pt Terminus'
+c.fonts.messages.warning = '11pt Terminus'
+c.fonts.messages.info = '11pt Terminus'
+c.fonts.prompts = '11pt Terminus'
+
+# Thanks, Florian!
 # gruvbox dark hard qutebrowser theme by Florian Bruhin <me@the-compiler.org>
 #
 # Originally based on:
