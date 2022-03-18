@@ -33,6 +33,15 @@ c.fonts.messages.warning = '11pt Terminus'
 c.fonts.messages.info = '11pt Terminus'
 c.fonts.prompts = '11pt Terminus'
 
+# Adding search engines
+c.url.searchengines['d'] = 'https://duckduckgo.com/?q={}'
+c.url.searchengines['DEFAULT'] = c.url.searchengines['d']
+c.url.searchengines['y'] = 'https://www.youtube.com/results?search_query={}&search=Search'
+c.url.searchengines['git'] = 'http://github.com/search?q={}'
+c.url.searchengines['aur'] = 'http://aur.archlinux.org/packages.php?O=0&L=0&C=0&K={}'
+c.url.searchengines['pkg'] = 'http://www.archlinux.org/packages/?q={}'
+c.url.searchengines['aw'] = 'https://wiki.archlinux.org/index.php/Special:Search?search={}'
+
 # Thanks, Florian!
 # gruvbox dark hard qutebrowser theme by Florian Bruhin <me@the-compiler.org>
 #
