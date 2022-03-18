@@ -72,12 +72,6 @@ call plug#begin()
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
 
-" Better vim movement
-Plug 'justinmk/vim-sneak'
-
-" Vim and Tmux config
-Plug 'christoomey/vim-tmux-navigator'
-
 " vim-rooter
 Plug 'airblade/vim-rooter'
 
