@@ -7,4 +7,5 @@
 
 alias ls='ls --color=auto'
 PS1='[\W]\$ '
+# Use vi keys in command line
 set -o vi

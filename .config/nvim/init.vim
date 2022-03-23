@@ -153,7 +153,11 @@ command! -bang -nargs=* GGrep
             \   'git grep --line-number '.shellescape(<q-args>), 0,
             \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
+" End plug
 call plug#end()
 
+" Enable italics for Gruvbox theme
 let g:gruvbox_italic=1
+
+" Set theme
 colorscheme gruvbox
