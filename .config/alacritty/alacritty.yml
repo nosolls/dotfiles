@@ -60,8 +60,8 @@ colors:
 # Set font
 font:
   normal:
-    family: Terminus
-  size: 16
+    family: Hack
+  size: 14
 # Set window decorations
 window:
   decorations: 'full'
