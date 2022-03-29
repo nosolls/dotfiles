@@ -1,0 +1,7 @@
+configuration {
+  modi: "window,drun,ssh,combi";
+  font: "Hack 18";
+  combi-modi: "window,drun,ssh";
+  show-icons: true;
+  }
+@theme "gruvbox-dark"

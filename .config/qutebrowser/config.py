@@ -11,27 +11,27 @@ config.bind('U', 'undo')
 # Remember last tabs
 c.auto_save.session = True
 
-# Dark mode for sites
-config.set("colors.webpage.darkmode.enabled", True)
-
 # Change homerow for Colemak Mod-DHm
 c.hints.chars = 'arstdhneio'
 
+# Dark mode on sites
+config.set("colors.webpage.darkmode.enabled", True)
+
 # Set font
-c.fonts.web.family.fixed = 'Terminus'
-c.fonts.completion.category = '11pt bold Terminus'
-c.fonts.completion.entry = '11pt Terminus'
-c.fonts.tabs.selected = '11pt Terminus'
-c.fonts.tabs.unselected = '11pt Terminus'
-c.fonts.statusbar = '11pt Terminus'
-c.fonts.downloads = '11pt Terminus'
-c.fonts.hints = 'bold 10px Terminus'
-c.fonts.debug_console = '11pt Terminus'
-c.fonts.keyhint = '11pt Terminus'
-c.fonts.messages.error = '11pt Terminus'
-c.fonts.messages.warning = '11pt Terminus'
-c.fonts.messages.info = '11pt Terminus'
-c.fonts.prompts = '11pt Terminus'
+c.fonts.web.family.fixed = 'Hack'
+c.fonts.completion.category = '11pt bold Hack'
+c.fonts.completion.entry = '11pt Hack'
+c.fonts.tabs.selected = '11pt Hack'
+c.fonts.tabs.unselected = '11pt Hack'
+c.fonts.statusbar = '11pt Hack'
+c.fonts.downloads = '11pt Hack'
+c.fonts.hints = 'bold 14px Hack'
+c.fonts.debug_console = '11pt Hack'
+c.fonts.keyhint = 'bold 12pt Hack'
+c.fonts.messages.error = '11pt Hack'
+c.fonts.messages.warning = '11pt Hack'
+c.fonts.messages.info = '11pt Hack'
+c.fonts.prompts = '11pt Hack'
 
 # Adding search engines
 c.url.searchengines['d'] = 'https://duckduckgo.com/?q={}'
