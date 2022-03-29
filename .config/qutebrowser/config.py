@@ -8,6 +8,9 @@ config.bind('D', 'tab-close')
 config.bind('u', 'scroll-page 0 -0.5')
 config.bind('U', 'undo')
 
+# Mpv for videos
+config.bind(',m', 'hint links spawn mpv {hint-url}')
+
 # Remember last tabs
 c.auto_save.session = True
 
