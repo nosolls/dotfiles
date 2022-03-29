@@ -1,0 +1,16 @@
+order += "cpu_usage"
+order += "memory"
+order += "time"
+
+cpu_usage {
+	format = "CPU: %usage "
+}
+
+memory {
+    memory_used_method = classical
+    format = " RAM: %used / %total "
+}
+
+time {
+	format = " %h-%d %H:%M "
+}
