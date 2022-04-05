@@ -9,8 +9,8 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-gaps inner 8
-gaps outer 8
+gaps inner 10
+gaps outer 10
 
 for_window [class="^.*"] border pixel 2
 
@@ -29,8 +29,8 @@ font pango:monospace 8
 exec --no-startup-id dex --autostart --environment i3
 
 # Setup monitors
-exec --no-startup-id xrandr --output DisplayPort-1 --mode 2560x1440 --rate 74.99
-exec --no-startup-id xrandr --output DisplayPort-2 --mode 2560x1440 --rate 74.99
+exec --no-startup-id xrandr --output DisplayPort-1 --mode 2560x1440 --rate 60.7
+exec --no-startup-id xrandr --output DisplayPort-2 --mode 2560x1440 --rate 60.7
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
