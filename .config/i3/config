@@ -9,8 +9,8 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-gaps inner 10
-gaps outer 10
+gaps inner 8
+gaps outer 8
 
 for_window [class="^.*"] border pixel 2
 
@@ -222,7 +222,7 @@ for_window [class="mpv"] floating enable
 for_window [class="mpv"] resize set 700 400
 
 # Set wallpaper with feh
-exec --no-startup-id feh --bg-fill /home/nosolls/Pictures/trees.jpg
+exec --no-startup-id feh --bg-fill /home/nosolls/Pictures/dark.jpg
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -230,52 +230,38 @@ exec --no-startup-id feh --bg-fill /home/nosolls/Pictures/trees.jpg
 #        status_command i3status
 #}
 
-## Base16 Gruvbox light, hard
-# Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
-#
-# You can use these variables anywhere in the i3 configuration file.
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
+set $lightgray #bdae93
 
-set $base00 #f9f5d7
-set $base01 #ebdbb2
-set $base02 #d5c4a1
-set $base03 #bdae93
-set $base04 #665c54
-set $base05 #504945
-set $base06 #3c3836
-set $base07 #282828
-set $base08 #9d0006
-set $base09 #af3a03
-set $base0A #b57614
-set $base0B #79740e
-set $base0C #427b58
-set $base0D #076678
-set $base0E #8f3f71
-set $base0F #d65d0e
-
-# Basic bar configuration using the Base16 variables.
 bar {
+    position bottom
     status_command i3status
-
+    # only needed for my desktop
+    tray_output DisplayPort-1
     colors {
-        background $base00
-        separator  $base01
-        statusline $base04
-
-        # State             Border  BG      Text
-        focused_workspace   $base05 $base0D $base00
-        active_workspace    $base05 $base03 $base00
-        inactive_workspace  $base03 $base01 $base05
-        urgent_workspace    $base08 $base08 $base00
-        binding_mode        $base00 $base0A $base00
+        # bar background color
+        background $bg
+        # text color used for blocks that do not have a color specified.
+        statusline $lightgray
+        # workspaces section            
+        #                    border  backgr. text
+        focused_workspace    $lightgray $lightgray $bg
+        inactive_workspace   $darkgray $darkgray $lightgray
+        active_workspace     $darkgray $darkgray $lightgray
+        urgent_workspace     $red $red $bg
     }
 }
 
-# Basic color configuration using the Base16 variables for windows and borders.
-# Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base05 $base0D $base00 $base0D $base0C
-client.focused_inactive $base01 $base01 $base05 $base03 $base01
-client.unfocused        $base01 $base00 $base05 $base01 $base01
-client.urgent           $base08 $base08 $base00 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base00
-client.background       $base07
-
+# class                 border|backgr|text|indicator|child_border
+client.focused          $lightgray $lightgray $bg $purple $darkgray
+client.focused_inactive $darkgray $darkgray $lightgray $purple $darkgray
+client.unfocused        $darkgray $darkgray $lightgray $purple $darkgray
+client.urgent           $red $red $white $red $red
