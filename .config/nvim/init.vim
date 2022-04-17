@@ -159,5 +159,7 @@ call plug#end()
 " Enable italics for Gruvbox theme
 let g:gruvbox_italic=1
 
+" Go to dark mode
+set background=dark
 " Set theme
 colorscheme gruvbox
